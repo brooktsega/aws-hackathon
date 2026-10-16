@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hackathon Idea Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Hackathon Idea Board</h1>
+      <p class="subtitle">Drop your ideas here. The best ones get built.</p>
+    </header>
+
+    <form id="idea-form" class="idea-form" autocomplete="off">
+      <label for="idea-input" class="visually-hidden">Your idea</label>
+      <input id="idea-input" type="text" placeholder="Type an idea…" maxlength="200" required>
+      <button type="submit">Add</button>
+    </form>
+
+    <p id="count" class="count"></p>
+    <ul id="idea-list" class="idea-list"></ul>
+    <p id="empty" class="empty">No ideas yet. Add the first one!</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
